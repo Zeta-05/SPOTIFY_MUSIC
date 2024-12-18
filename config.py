@@ -9,18 +9,13 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID", "0"))
-API_HASH = getenv("API_HASH", "0")
-# ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN", "0")
-# -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","@UTTAM470")
-# --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "BABY_MUSIC09_BOT")
-# --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "╼⃝𖠁 𝐁ʌʙʏ ꭙ 𝐌ᴜsɪᴄ 𖠁⃝╾")
-# ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "╼⃝𖠁 𝐁ʌʙʏ ꭙ 𝐌ᴜsɪᴄ 𖠁⃝╾")
+API_ID = os.getenv("API_ID", "23568641")
+API_HASH = os.getenv("API_HASH", "a39098e8752a45c2d6d1889941547bbc")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7339158179:AAFZRGNI--7xVXUmwQLkIX_fj7yLhp_8wbs")
+OWNER_USERNAME = os.getenv("OWNER_USERNAME", "X_STARBOY_KT")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "UtopiaMaxBot")
+BOT_NAME = os.getenv("BOT_NAME", "Utopia")
+ASSUSERNAME = os.getenv("ASSUSERNAME")
 
 API_KEY = "abc921ff654bcf7b3faff8f775d781d27d32bfd02d6692eea30249ba781c8b"  # अपना API key यहाँ डालें
 # ---------------------------------------------------------
@@ -28,7 +23,7 @@ API_KEY = "abc921ff654bcf7b3faff8f775d781d27d32bfd02d6692eea30249ba781c8b"  # �
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://TEAMBABY01:UTTAMRATHORE09@cluster0.vmjl9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://GOKU:MISSBHOPALI@goku.pzzsl8d.mongodb.net/?retryWrites=true&w=majority")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
