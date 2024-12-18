@@ -32,10 +32,8 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", "0"))
-# ----------------------------------------------------------------
-# ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", "0"))
+LOGGER_ID = os.getenv("LOGGER_ID", "@ZTX_HEADQUATERS")
+OWNER_ID = get_env_int("OWNER_ID", "7318101682")
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 # config.py
@@ -64,10 +62,10 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BABY09_WORLD")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+OL6jdTL7JAJjYzVl")
-SOURCE = getenv("SOURCE", "https://github.com/BABY-MUSIC/SPOTIFY_MUSIC")
-CHAT = getenv("CHAT", "https://t.me/chattinghuboo")
+SUPPORT_CHANNEL = os.getenv("SUPPORT_CHANNEL", "https://t.me/Kayto_Official")
+SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "https://t.me/ZTX_HEADQUATERS")
+SOURCE = getenv("SOURCE", "https://t.me/Kayto_Official")
+CHAT = getenv("CHAT", "https://t.me/Kayto_Official")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -113,7 +111,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BQFfYv8Afrs-bAndXp9OCWJw6G-fimbq9M9pGnpo8Uw9kzZpsE1aAlIZxSJMpggKzwBuxkNJQAMa6Z2dmJfq-15QaxZ0MmmsMpIC2dyaSzbvTL9h2s_UDpcGeZ-FeT_mGPZa-SyB3WY3Au6lKa_97OP8LyinZvgFFnTBsKXOpzw5A-1TY8BTpTvo9HSJROmYJLPqmRG7rWeA8Cg2BLIqQRbAerKzAwn0dzXjh9rWfDvv2ugXIGrokfntxlJ1n6VzG-sumoAWZfrdiADNUyz8wsV-2oIY2JRRsMPvF20PSCRpdPUMDywzxpBhgg9bJN5ZALpoPOSGd8lLi4lKu2AEdh_EV1BsHQAAAAGjgnJNAA")
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
@@ -133,22 +131,42 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
-START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/xhpqtp.jpg"
+START_IMG_URL = os.getenv(
+    "START_IMG_URL", "https://graph.org/file/364a09ddd47378efaecfb-2d3ae182ccf44e9087.jpg"
 )
-PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/fd827f9a4fe8eaa3e8bf4.jpg"
+PING_IMG_URL = os.getenv(
+    "PING_IMG_URL", "https://graph.org/file/35ef624f376e22a0fa1d7-1ea63e464ea9f36fab.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/d30d11c4365c025c25e3e.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/c832e84cd991c865c7e4f.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/e575ae40d6635250974e1.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/4dc854f961cd3ce46899b.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/6c741a6bc1e1663ac96fc.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/6c741a6bc1e1663ac96fc.jpg"
+PLAYLIST_IMG_URL = os.getenv(
+    "PLAYLIST_IMG_URL", "https://envs.sh/K-2.jpg"
+) 
+TELEGRAM_AUDIO_URL = os.getenv(
+    "TELEGRAM_AUDIO_URL", "https://envs.sh/K-2.jpg"
+) 
+TELEGRAM_VIDEO_URL = os.getenv(
+    "TELEGRAM_VIDEO_URL", "https://envs.sh/K-2.jpg"
+) 
+STREAM_IMG_URL = os.getenv(
+    "STREAM_IMG_URL", "https://envs.sh/K-2.jpg"
+) 
+SOUNCLOUD_IMG_URL = os.getenv(
+    "SOUNCLOUD_IMG_URL", "https://envs.sh/K-2.jpg"
+) 
+YOUTUBE_IMG_URL = os.getenv(
+    "YOUTUBE_IMG_URL", "https://envs.sh/K-2.jpg"
+) 
+SPOTIFY_ARTIST_IMG_URL = os.getenv(
+    "SPOTIFY_ARTIST_IMG_URL", "https://envs.sh/K-2.jpg",
+) 
+SPOTIFY_ALBUM_IMG_URL = os.getenv(
+    "SPOTIFY_ALBUM_IMG_URL", "https://envs.sh/K-2.jpg"
+) 
+SPOTIFY_PLAYLIST_IMG_URL = os.getenv(
+    "SPOTIFY_PLAYLIST_IMG_URL", "https://envs.sh/K-2.jpg"
+) 
+
+# YouTube thumbnail URL format
+YOUTUBE_IMG_URL = "https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
 
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
